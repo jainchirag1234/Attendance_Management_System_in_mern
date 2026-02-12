@@ -1,0 +1,62 @@
+.leave-form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.leave-form input,
+.leave-form textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.leave-form button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.leave-form button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.info-text {
+  color: blue;
+}
+
+.error-text {
+  color: red;
+}
+
+.leave-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leave-table th,
+.leave-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.leave-table td.approved {
+  color: green;
+  font-weight: bold;
+}
+
+.leave-table td.rejected {
+  color: red;
+  font-weight: bold;
+}
+
+.leave-table td.pending {
+  color: orange;
+  font-weight: bold;
+}

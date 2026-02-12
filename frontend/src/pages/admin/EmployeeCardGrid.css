@@ -1,0 +1,58 @@
+.employee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.employee-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.employee-card:hover {
+  transform: translateY(-5px);
+}
+
+.employee-card.inactive {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #6a5cff, #3b82f6);
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+
+.employee-card h4 {
+  margin: 10px 0 4px;
+}
+
+.employee-card p {
+  font-size: 14px;
+  color: #777;
+}
+
+.active {
+  color: green;
+  font-weight: 600;
+}
+
+.inactive-text {
+  color: red;
+  font-weight: 600;
+}
