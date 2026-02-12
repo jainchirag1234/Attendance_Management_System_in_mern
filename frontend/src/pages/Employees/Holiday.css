@@ -1,0 +1,27 @@
+.holiday-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.holiday-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.holiday-table th,
+.holiday-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.holiday-table th {
+  background-color: #f4f4f4;
+}
+
+.holiday-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
