@@ -1,0 +1,156 @@
+/* 🌟 General Layout */
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f6fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  padding: 20px 30px;
+}
+
+/* 🌟 Heading */
+.page h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2f3640;
+}
+
+/* 🌟 Mark Attendance Section */
+.mark-attendance {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.mark-attendance h4 {
+  margin: 0 0 10px 0;
+  color: #2f3640;
+}
+
+.mark-attendance button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.mark-attendance button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.mark-attendance button:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+/* Different colors for each button */
+.mark-attendance button:nth-child(1) {
+  background-color: #4cd137; /* Green */
+  color: white;
+}
+
+.mark-attendance button:nth-child(2) {
+  background-color: #e84118; /* Red */
+  color: white;
+}
+
+.mark-attendance button:nth-child(3) {
+  background-color: #fbc531; /* Yellow */
+  color: white;
+}
+
+/* 🌟 Attendance Card */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+/* Card Header */
+.card h4 {
+  margin: 0;
+  font-size: 20px;
+  color: #2f3640;
+}
+
+/* Card Stats */
+.card div span {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* 🌟 Attendance Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.table th,
+.table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #dcdde1;
+}
+
+.table th {
+  background-color: #f1f2f6;
+  font-weight: 600;
+}
+
+.table tr:hover {
+  background-color: #f5f6fa;
+}
+
+/* 🌟 Error & Loading Text */
+p {
+  font-size: 16px;
+  color: #2f3640;
+}
+
+p[style*="color: red"] {
+  font-weight: bold;
+}
+
+/* 🌟 Responsive */
+@media screen and (max-width: 768px) {
+  .mark-attendance {
+    flex-direction: column;
+  }
+
+  .mark-attendance div {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .card div {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .table th,
+  .table td {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+}

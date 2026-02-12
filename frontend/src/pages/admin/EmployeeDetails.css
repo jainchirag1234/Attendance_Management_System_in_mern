@@ -1,0 +1,97 @@
+.page-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.employee-info-card {
+  background-color: #f7f9fc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+.employee-name {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.employee-email {
+  font-size: 16px;
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.status-badge.active {
+  background-color: #27ae60;
+}
+
+.status-badge.inactive {
+  background-color: #c0392b;
+}
+
+.filter-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-row select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.attendance-table th,
+.attendance-table td {
+  padding: 12px 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.attendance-table th {
+  background-color: #f0f3f5;
+  font-weight: 600;
+}
+
+.status-present {
+  color: #27ae60;
+  font-weight: 600;
+}
+
+.status-absent {
+  color: #c0392b;
+  font-weight: 600;
+}
+
+.status-leave {
+  color: #f39c12;
+  font-weight: 600;
+}
+
+.no-records {
+  text-align: center;
+  color: #7f8c8d;
+}
+
+.loading {
+  font-size: 18px;
+  text-align: center;
+  padding: 50px 0;
+}
